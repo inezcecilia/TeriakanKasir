@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane02" prefHeight="437.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InformasiController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="48.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="850.0" />
+      <Label layoutX="258.0" layoutY="-5.0" text="Informasi" textFill="#ebe9e9">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="namatf" layoutX="11.0" layoutY="107.0" prefHeight="38.0" prefWidth="198.0" promptText="Nama Bisnis">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tipetf" layoutX="11.0" layoutY="153.0" prefHeight="42.0" prefWidth="198.0" promptText="Tipe Bisnis">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="kategoritf" layoutX="11.0" layoutY="203.0" prefHeight="37.0" prefWidth="198.0" promptText="Kategori">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="kotatf" layoutX="11.0" layoutY="247.0" prefHeight="37.0" prefWidth="198.0" promptText="Kota">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="provinsitf" layoutX="11.0" layoutY="292.0" prefHeight="37.0" prefWidth="198.0" promptText="Provinsi">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="kodepostf" layoutX="11.0" layoutY="337.0" prefHeight="37.0" prefWidth="198.0" promptText="Kode Pos">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="simpan" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" onAction="#doSimpan" prefHeight="48.0" prefWidth="96.0" text="Simpan">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tv2" layoutX="207.0" layoutY="66.0" prefHeight="267.0" prefWidth="643.0">
+        <columns>
+          <TableColumn fx:id="idview" prefWidth="48.0" text="Id" />
+          <TableColumn fx:id="namaview" prefWidth="108.0" text="Nama" />
+            <TableColumn fx:id="tipeview" prefWidth="87.0" text="Tipe" />
+            <TableColumn fx:id="ketegoriview" prefWidth="110.0" text="Kategori" />
+            <TableColumn fx:id="kotaview" prefWidth="102.0" text="Kota" />
+            <TableColumn fx:id="provinsiview" prefWidth="81.0" text="Provinsi" />
+            <TableColumn fx:id="kodeview" prefWidth="133.0" text="KodePoss" />
+        </columns>
+      </TableView>
+      <Button fx:id="edit" layoutX="110.0" layoutY="389.0" mnemonicParsing="false" onAction="#doEdit" prefHeight="48.0" prefWidth="89.0" text="Edit">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="hapus" layoutX="199.0" layoutY="389.0" mnemonicParsing="false" onAction="#doHapus" prefHeight="48.0" prefWidth="96.0" text="Hapus">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="344.0" layoutY="389.0" mnemonicParsing="false" onAction="#doBack" prefHeight="48.0" prefWidth="96.0" text="Back">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idtf" layoutX="11.0" layoutY="66.0" prefHeight="38.0" prefWidth="198.0" promptText="Id">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

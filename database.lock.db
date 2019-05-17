@@ -1,0 +1,6 @@
+#FileLock
+#Fri May 17 09:06:36 ICT 2019
+hostName=172.42.40.24
+id=16ac38a85f1797365c9a38d5fd897d41a2e4d0827dc
+method=file
+server=172.42.40.24\:50383

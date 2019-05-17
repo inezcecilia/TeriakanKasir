@@ -1,0 +1,27 @@
+2019-05-16 12:39:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE INFORMASI(ID INT AUTO_INCREMENT PRIMATY[*] KEY, NAMA VARCHAR(255),TIPEBIS VARCHAR(255),KATEGORI VARCHAR(255),KOTA VARCHAR(255),PROVINSI VARCHAR(255),PROVINSI VARCHAR(255),KODEPOS VARCHAR(255)) "; expected "(, NOT, NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE INFORMASI(ID INT auto_increment PRIMATY KEY, NAMA VARCHAR(255),TIPEBIS VARCHAR(255),KATEGORI VARCHAR(255),KOTA VARCHAR(255),PROVINSI VARCHAR(255),PROVINSI VARCHAR(255),KODEPOS VARCHAR(255)) [42001-197]
+2019-05-16 12:40:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Duplicate column name "PROVINSI"; SQL statement:
+CREATE TABLE INFORMASI(ID INT auto_increment PRIMARY KEY, NAMA VARCHAR(255),TIPEBIS VARCHAR(255),KATEGORI VARCHAR(255),KOTA VARCHAR(255),PROVINSI VARCHAR(255),PROVINSI VARCHAR(255),KODEPOS VARCHAR(255)) [42121-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.setColumns(Table.java:431)
+	at org.h2.table.TableBase.<init>(TableBase.java:46)
+	at org.h2.mvstore.db.MVTable.<init>(MVTable.java:128)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:109)
+	at org.h2.mvstore.db.MVTableEngine.createTable(MVTableEngine.java:42)
+	at org.h2.schema.Schema.createTable(Schema.java:670)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:100)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1077)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1386)
+	at org.h2.server.web.WebApp.query(WebApp.java:1060)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1022)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1009)
+	at org.h2.server.web.WebThread.process(WebThread.java:165)
+	at org.h2.server.web.WebThread.run(WebThread.java:90)
+	at java.lang.Thread.run(Unknown Source)

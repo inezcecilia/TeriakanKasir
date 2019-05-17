@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="pane01" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransaksiController">
+   <children>
+      <TableView fx:id="transaksiTV" layoutX="1.0" layoutY="76.0" prefHeight="341.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="idview" prefWidth="91.0" text="ID" />
+            <TableColumn fx:id="menuview" prefWidth="266.0" text="Menu" />
+            <TableColumn fx:id="hargaview" prefWidth="241.0" text="Harga" />
+         </columns>
+      </TableView>
+      <Button fx:id="tambahB" layoutY="526.0" mnemonicParsing="false" onAction="#doTambah" prefHeight="50.0" prefWidth="150.0" text="Tambah" />
+      <Button fx:id="editB" layoutX="146.0" layoutY="526.0" mnemonicParsing="false" onAction="#doEdit" prefHeight="50.0" prefWidth="150.0" text="Edit" />
+      <Button fx:id="hapusB" layoutX="296.0" layoutY="526.0" mnemonicParsing="false" onAction="#doHapus" prefHeight="50.0" prefWidth="150.0" text="Hapus" />
+      <Button fx:id="kembaliB" layoutX="446.0" layoutY="526.0" mnemonicParsing="false" onAction="#doKembali" prefHeight="50.0" prefWidth="150.0" text="Kembali" />
+      <TextField fx:id="tfid" layoutX="14.0" layoutY="458.0" prefHeight="31.0" prefWidth="162.0" promptText="Id">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfharga" layoutX="407.0" layoutY="458.0" promptText="Harga">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfmenu" layoutX="196.0" layoutY="458.0" promptText="Menu">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="79.0" layoutX="-6.0" layoutY="-10.0" stroke="BLACK" strokeType="INSIDE" width="607.0" />
+   </children>
+</AnchorPane>
